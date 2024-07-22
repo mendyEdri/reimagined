@@ -1,0 +1,12 @@
+langgraph
+langchain
+typing
+langchain_openai
+langchain_community
+aiosqlite
+tavily-python
+langchainhub
+requests
+groq
+langchain_groq
+together
