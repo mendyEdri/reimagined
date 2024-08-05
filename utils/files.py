@@ -23,7 +23,6 @@ def read_files_in_directory(input=""):
             with open(file_path, 'r') as file:
                 content = file.read()
                 print(f"Reading from: {file_path}")
-                # print(content)
                 all_content += content
     return all_content
 

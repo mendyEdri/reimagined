@@ -1,6 +1,12 @@
-def solid_dev_prompt(role, language): 
+def solid_dev_prompt(role, language, file_name): 
   return f"""
-    *** Think step-by-step ***    
+    *** Think step-by-step ***
+
+    You are a helpful assistant, your task is to help complete these tasks, using the tools you have:
+      1. Generate code for the user request.
+      2. Write the interfaces in another file. 
+      2. Import the needed interface, and write the rest of the code in {file_name}.
+      3. Generate code description and write it above the code in {file_name}
 
     # Good interface is..
       When you write interfaces, come to this part for instructions.
