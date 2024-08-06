@@ -1,3 +1,5 @@
+// lock
+// created by gpt-4o-mini
 export interface ILocalStorage<T> {
     setItem(key: string, value: T): void;
     getItem(key: string): T | null;
@@ -12,7 +14,7 @@ export class LocalStorage<T> implements ILocalStorage<T> {
 
     getItem(key: string): T | null {
         const item = localStorage.getItem(key);
-        return item ? JSON.parse(item) : null;
+        return item ? JSON.parse(item) as T : null;
     }
 
     removeItem(key: string): void {
